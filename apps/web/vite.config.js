@@ -302,7 +302,10 @@ export default defineConfig({
 		port: 3000,
 		cors: true,
 		headers: {
-			'Cross-Origin-Embedder-Policy': 'credentialless',
+			// 'credentialless' (template default) loads cross-origin iframes WITHOUT cookies,
+			// which blanks the Cal.com embed in local dev. Firebase Hosting sends no such header,
+			// so the embed works in production. Relaxed here so it also renders locally.
+			'Cross-Origin-Embedder-Policy': 'unsafe-none',
 		},
 		allowedHosts: [
 			'.app-preview.com',

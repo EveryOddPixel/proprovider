@@ -88,6 +88,17 @@ const BookCallPage = () => {
                   config={{ layout: 'month_view', useSlotsViewOnSmallScreen: 'true' }}
                 />
               </div>
+              <p className="mt-4 text-center text-sm text-gray-600">
+                Calendar not loading?{' '}
+                <a
+                  href="https://cal.com/proprovider/30min"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium text-brand-600 hover:underline"
+                >
+                  Book directly on Cal.com →
+                </a>
+              </p>
             </div>
           </div>
         </div>

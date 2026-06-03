@@ -122,7 +122,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Service Packages */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Service Packages</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -146,7 +146,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Collaborative Practice Agreements Detail */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-12 h-12 bg-brand-100 rounded-lg flex items-center justify-center text-brand-600 flex-shrink-0">
@@ -202,7 +202,7 @@ const ServicesPage = () => {
       </section>
 
       {/* What We Do / Don't Do */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             What We Do & What We Don't Do
@@ -248,7 +248,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Process Timeline */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Our Process</h2>
           <div className="space-y-8">
@@ -274,7 +274,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Deliverables */}
-      <section className="py-16 bg-gradient-to-br from-brand-50 to-slate-50">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">What You'll Receive</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -289,7 +289,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Notarization Teaser */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-brand-900 rounded-2xl p-10 text-white flex flex-col md:flex-row items-center justify-between gap-8">
             <div>

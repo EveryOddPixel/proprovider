@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, FileText, Bell, Shield, Calendar, ArrowRight, Users, Stethoscope, Brain, Briefcase } from 'lucide-react';
+import { CheckCircle2, FileText, Bell, Shield, Calendar, ArrowRight, Users, Stethoscope, Brain, Briefcase, ChevronDown } from 'lucide-react';
 import { branding } from '@/config/branding';
 import { Button } from '@/components/ui/button';
 
@@ -107,15 +107,27 @@ const HomePage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-white py-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-12">
+      <section className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex flex-col">
+        {/* network-line motif — connected nodes (verification / networks) */}
+        <svg className="pointer-events-none absolute inset-0 w-full h-full opacity-[0.07] text-brand-900" aria-hidden="true">
+          <defs>
+            <pattern id="hero-netdots" width="64" height="64" patternUnits="userSpaceOnUse">
+              <circle cx="4" cy="4" r="2.5" fill="currentColor" />
+              <line x1="4" y1="4" x2="64" y2="4" stroke="currentColor" strokeWidth="1" />
+              <line x1="4" y1="4" x2="4" y2="64" stroke="currentColor" strokeWidth="1" />
+              <line x1="4" y1="4" x2="64" y2="64" stroke="currentColor" strokeWidth="0.5" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hero-netdots)" />
+        </svg>
+        <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="flex flex-col md:flex-row items-center gap-12 w-full">
             {/* Logo left */}
             <div className="flex-shrink-0 flex items-center justify-center w-full md:w-1/2">
               <img
-                src="/colored-logo.png"
+                src="/proprovider-nobg.png"
                 alt={branding.companyName}
-                className="max-w-xs sm:max-w-sm lg:max-w-md w-full object-contain"
+                className="max-w-[25rem] sm:max-w-[30rem] lg:max-w-[35rem] w-full object-contain"
               />
             </div>
             {/* Content right */}
@@ -143,10 +155,21 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
+        {/* Scroll-down signifier */}
+        <a
+          href="#why"
+          onClick={(e) => { e.preventDefault(); document.getElementById('why')?.scrollIntoView({ behavior: 'smooth' }); }}
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-brand-700 hover:text-brand-900 transition-colors"
+          aria-label="Scroll down to learn more"
+        >
+          <span className="text-xs font-semibold uppercase tracking-widest">Scroll</span>
+          <ChevronDown className="w-6 h-6 animate-bounce" />
+        </a>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 bg-white">
+      <section id="why" className="py-16 scroll-mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Why Choose Us
@@ -168,7 +191,7 @@ const HomePage = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-brand-50">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             How It Works
@@ -195,7 +218,7 @@ const HomePage = () => {
       </section>
 
       {/* Services Snapshot */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
@@ -223,7 +246,7 @@ const HomePage = () => {
       </section>
 
       {/* Provider Types */}
-      <section className="py-16 bg-gradient-to-br from-brand-50 to-slate-50">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Who We Serve
@@ -242,7 +265,7 @@ const HomePage = () => {
       </section>
 
       {/* Trust Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-brand-900 rounded-2xl p-12 text-white">
             <h2 className="text-3xl font-bold mb-8 text-center">Built on Trust & Transparency</h2>
@@ -268,7 +291,7 @@ const HomePage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Frequently Asked Questions
@@ -288,7 +311,7 @@ const HomePage = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-brand-900">
             Ready to Simplify Your Credentialing?

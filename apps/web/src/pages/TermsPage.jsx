@@ -10,7 +10,7 @@ const TermsPage = () => {
         <meta name="description" content="Terms of service and important disclaimers for our credentialing administrative support services." />
       </Helmet>
 
-      <div className="py-12 bg-white">
+      <div className="py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-8">Terms & Disclaimers</h1>
           <p className="text-sm text-gray-600 mb-8">Last Updated: {new Date().toLocaleDateString()}</p>

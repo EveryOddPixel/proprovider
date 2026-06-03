@@ -47,7 +47,7 @@ const NotarizationPage = () => {
       </section>
 
       {/* Features */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {features.map((feature, index) => (
@@ -64,7 +64,7 @@ const NotarizationPage = () => {
       </section>
 
       {/* Document Types */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Documents We Can Notarize</h2>
           <p className="text-lg text-gray-600 text-center mb-12">
@@ -82,7 +82,7 @@ const NotarizationPage = () => {
       </section>
 
       {/* Multiple Signers */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="w-16 h-16 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 mx-auto mb-6">
             <Users className="w-8 h-8" />
@@ -95,7 +95,7 @@ const NotarizationPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-brand-900">
             Ready to Get Started?
