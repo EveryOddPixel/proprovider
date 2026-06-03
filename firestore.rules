@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /leads/{leadId} {
+      // Anyone can submit a lead (intake form)
+      allow create: if true;
+      // Only the designated admin can read, update, or delete
+      allow read, update, delete: if request.auth != null && request.auth.uid == "Zzm02SyTu2NXkMsM8BGzvAfl2pJ3";
+    }
+  }
+}

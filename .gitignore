@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+*.local
+
+# Environment files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Vite
+.vite/
+
+# PocketBase
+apps/pocketbase/pb_data/data.db
+apps/pocketbase/pb_data/data.db-shm
+apps/pocketbase/pb_data/data.db-wal
+apps/pocketbase/pb_data/auxiliary.db
+apps/pocketbase/pb_data/auxiliary.db-shm
+apps/pocketbase/pb_data/auxiliary.db-wal
+apps/pocketbase/pb_data/logs.db
+apps/pocketbase/pb_data/logs.db-shm
+apps/pocketbase/pb_data/logs.db-wal
+apps/pocketbase/pocketbase
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# Claude Code local config
+.claude/

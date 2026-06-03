@@ -1,0 +1,11 @@
+## Pages
+- [- $`}](/home): Focus on patients while we handle credentialing paperwork. Administrative support for healthcare provider credentialing, renewals, and compliance.
+- [`}](/about): Learn about our mission to simplify credentialing for healthcare providers through administrative support and transparent service.
+- [`}](/admindashboard): Admin dashboard for managing leads
+- [`}](/adminlogin): Admin login for credentialing services dashboard
+- [`}](/bookcall): Schedule a free discovery call to discuss your credentialing needs and learn how we can help.
+- [`}](/intake): Begin your credentialing journey with our simple intake form. Tell us about your needs and we
+- [`}](/notarization): Skip the office visit and get your documents notarized from anywhere. Connect with a licensed notary in minutes using your computer or smartphone.
+- [`}](/privacypolicy): Our privacy policy explains how we collect, use, and protect your information.
+- [`}](/services): Comprehensive credentialing administrative support services including initial credentialing, renewals, re-credentialing, reinstatement enrollment, and privileging support.
+- [`}](/terms): Terms of service and important disclaimers for our credentialing administrative support services.
